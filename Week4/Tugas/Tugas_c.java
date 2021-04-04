@@ -15,8 +15,6 @@ public class Tugas_c {
         int[] array;
         array = new int[k];
         int data;
-        int min = array[0];
-        int max = array[0];
         double rata_rata = 0;
         
         //input angka array
@@ -24,6 +22,8 @@ public class Tugas_c {
             System.out.print("Masukkan data nilai ke-" + (i+1) + " = ");
             array[i] = scan.nextInt();
         }
+        int min = array[0];
+        int max = array[0];
         Arrays.sort(array);
         for (int i = 0; i < array.length; i++){
             if (min > array[i]) {
